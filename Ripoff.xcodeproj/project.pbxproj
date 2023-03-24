@@ -11,6 +11,12 @@
 		801968F5270A4A9A00B88AF6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801968F4270A4A9A00B88AF6 /* ContentView.swift */; };
 		801968F7270A4A9A00B88AF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801968F6270A4A9A00B88AF6 /* Assets.xcassets */; };
 		801968FA270A4A9A00B88AF6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 801968F9270A4A9A00B88AF6 /* Preview Assets.xcassets */; };
+		80C2BC4A270BB48C00DA5A2F /* EllipsisButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C2BC49270BB48C00DA5A2F /* EllipsisButton.swift */; };
+		80C2BC4C270BB4A100DA5A2F /* TabsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C2BC4B270BB4A100DA5A2F /* TabsButton.swift */; };
+		80C2BC4E270BB4CB00DA5A2F /* ToolbarButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C2BC4D270BB4CB00DA5A2F /* ToolbarButtons.swift */; };
+		80C2BC50270BB4F000DA5A2F /* NavigationUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C2BC4F270BB4F000DA5A2F /* NavigationUI.swift */; };
+		80C2BC52270BB51900DA5A2F /* Omnibox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C2BC51270BB51900DA5A2F /* Omnibox.swift */; };
+		80C2BC55270BBCE100DA5A2F /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C2BC54270BBCE100DA5A2F /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		801968F4270A4A9A00B88AF6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		801968F6270A4A9A00B88AF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		801968F9270A4A9A00B88AF6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		80C2BC49270BB48C00DA5A2F /* EllipsisButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EllipsisButton.swift; sourceTree = "<group>"; };
+		80C2BC4B270BB4A100DA5A2F /* TabsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsButton.swift; sourceTree = "<group>"; };
+		80C2BC4D270BB4CB00DA5A2F /* ToolbarButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarButtons.swift; sourceTree = "<group>"; };
+		80C2BC4F270BB4F000DA5A2F /* NavigationUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUI.swift; sourceTree = "<group>"; };
+		80C2BC51270BB51900DA5A2F /* Omnibox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Omnibox.swift; sourceTree = "<group>"; };
+		80C2BC54270BBCE100DA5A2F /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,9 @@
 			children = (
 				801968F2270A4A9A00B88AF6 /* RipoffApp.swift */,
 				801968F4270A4A9A00B88AF6 /* ContentView.swift */,
+				80C2BC54270BBCE100DA5A2F /* WebView.swift */,
+				80C2BC51270BB51900DA5A2F /* Omnibox.swift */,
+				80C2BC53270BB52A00DA5A2F /* Buttons */,
 				801968F6270A4A9A00B88AF6 /* Assets.xcassets */,
 				801968F8270A4A9A00B88AF6 /* Preview Content */,
 			);
@@ -65,6 +80,17 @@
 				801968F9270A4A9A00B88AF6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		80C2BC53270BB52A00DA5A2F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				80C2BC4F270BB4F000DA5A2F /* NavigationUI.swift */,
+				80C2BC49270BB48C00DA5A2F /* EllipsisButton.swift */,
+				80C2BC4B270BB4A100DA5A2F /* TabsButton.swift */,
+				80C2BC4D270BB4CB00DA5A2F /* ToolbarButtons.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +109,8 @@
 			dependencies = (
 			);
 			name = Ripoff;
+			packageProductDependencies = (
+			);
 			productName = Ripoff;
 			productReference = 801968EF270A4A9A00B88AF6 /* Ripoff.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,8 @@
 				Base,
 			);
 			mainGroup = 801968E6270A4A9A00B88AF6;
+			packageReferences = (
+			);
 			productRefGroup = 801968F0270A4A9A00B88AF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C2BC4C270BB4A100DA5A2F /* TabsButton.swift in Sources */,
+				80C2BC55270BBCE100DA5A2F /* WebView.swift in Sources */,
+				80C2BC50270BB4F000DA5A2F /* NavigationUI.swift in Sources */,
 				801968F5270A4A9A00B88AF6 /* ContentView.swift in Sources */,
 				801968F3270A4A9A00B88AF6 /* RipoffApp.swift in Sources */,
+				80C2BC4E270BB4CB00DA5A2F /* ToolbarButtons.swift in Sources */,
+				80C2BC52270BB51900DA5A2F /* Omnibox.swift in Sources */,
+				80C2BC4A270BB48C00DA5A2F /* EllipsisButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +313,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +343,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
